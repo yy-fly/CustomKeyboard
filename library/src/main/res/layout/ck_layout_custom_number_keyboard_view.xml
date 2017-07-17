@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_keyboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#66000000" />
+
+    <LinearLayout
+        android:id="@+id/custom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <include layout="@layout/ck_layout_number_keyboard_view" />
+</LinearLayout>
